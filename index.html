@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <title>CV - Trần Mỹ Nguyên</title>
+    <style>
+        body {
+            display: flex;
+            font-family: 'K2D', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #1f5ca9;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+        .container {
+            max-width: 800px;
+            background: white;
+            padding: 20px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            transform: translateY(20px);
+            transition: transform 1s ease-in-out;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .contact-info li a {
+            text-decoration: none;
+            color: #1f5ca9;
+            transition: color 0.3s;
+        }
+        .contact-info li a:hover {
+            color: #ff6600;
+        }
+        .img_information {
+            display: flex;
+            align-items: center; 
+            justify-content: center;
+            gap: 50px; 
+        }
+        .img_person {
+            width: 150px; 
+            height: 150px;
+            border-radius: 50%; 
+            object-fit: cover;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .ifram_scratch {
+            display: flex;
+            text-align: center;
+            margin-top: 15px;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: nowrap; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="img_information">
+                <img src="./image.png" alt="" class="img_person">
+                <div>
+                    <h1>Trần Mỹ Nguyên</h1>
+                    <p>Vị trí ứng tuyển: Giáo viên Tin học thiếu nhi</p>
+                </div>
+            </div>
+        </header>
+        <section class="section">
+            <h2>Thông tin liên hệ</h2>
+            <ul class="contact-info">
+                <li>Email: <a href="mailto:tran08200315@gmail.com">tran08200315@gmail.com</a></li>
+                <li>Điện thoại: 0965 045 643</li>
+                <li>Địa chỉ: 3/2, Xuân Khánh, Ninh Kiều, Cần Thơ</li>
+                <li>GitHub: <a href="https://github.com/Nguyen1508">Nguyen1508</a></li>
+                <li>Scratch: <a href="https://scratch.mit.edu/users/nguyen1508/">Nguyen1508</a></li>
+            </ul>
+        </section>
+        <section class="section">
+            <h2>Học vấn</h2>
+            <p><strong>Đại học Cần Thơ</strong> - Sư phạm Tin học (2021 - 2025)</p>
+        </section>
+        <section class="section">
+            <h2>Kỹ năng</h2>
+            <ul>
+                <li>HTML, CSS, JavaScript</li>
+                <li>Python, PHP</li>
+                <li>React</li>
+                <li>SQL, NoSQL</li>
+                <li>Scratch</li>
+            </ul>
+        </section>
+        <section class="section">
+            <h2>Sản phẩm</h2>
+            <p><strong>Trang web mô phỏng thuật toán</strong> - Lập trình viên (2020 - nay)</p>
+            <ul>
+                <li>Trò chơi lật thẻ mô tả thuật toán tìm kiếm tuần tự.</li>
+                <li>Giúp cho dạy học trở nên trực quan và sinh động hơn.</li>
+                <li>GitHub: <a href="https://nguyen1508.github.io/latthe/">Lật thẻ</a></li>
+            </ul>
+            <p><strong>Một số trò chơi trong Scratch</strong> - Lập trình viên (2020 - nay)</p>
+            <ul>
+                <li>Học sinh có thể vừa học vừa chơi.</li>
+                <li>Lập trình trở nên dễ dàng với Scratch.</li>
+            </ul>
+            <div class="ifram_scratch">
+                <iframe src="https://scratch.mit.edu/projects/907713030/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+                <iframe src="https://scratch.mit.edu/projects/902074026/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+            </div>
+        </section>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.body.style.opacity = "1";
+            document.querySelector(".container").style.transform = "translateY(0)";
+        });
+    </script>
+</body>
+</html>
